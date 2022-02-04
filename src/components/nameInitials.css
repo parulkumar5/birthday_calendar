@@ -1,0 +1,13 @@
+.name-initials-box {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.initials {
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+}
