@@ -1,7 +1,7 @@
 import Input from "./components/input";
 import Day from "./components/day";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // This is how data will be stored 0=sunday 6=saturday
 

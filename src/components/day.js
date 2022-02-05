@@ -4,7 +4,7 @@ import "./day.css";
 
 export default function day({ people, day }) {
   let sideOfSquare = 1;
-  if (people.length == 0) {
+  if (people.length === 0) {
     return (
       <div className="day-container">
         <div className="day-header">
