@@ -59,12 +59,15 @@ function App() {
 
   return (
     <>
-      <Input handleInput={handleInput} onYearChange={onYearChange} />
+      <header className="header">
+        <span>Birthday Calendar</span>
+      </header>
       <div className="calendar-container">
         {birthdayData.map((elem, index) => {
           return <Day people={elem} day={dayNames[index]} key={index} />;
         })}
       </div>
+      <Input handleInput={handleInput} onYearChange={onYearChange} />
     </>
   );
 }

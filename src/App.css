@@ -37,21 +37,41 @@
   }
 }
 
+.header {
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+  padding: 7px;
+  background: rgb(25, 86, 177);
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+
 .calendar-container {
   display: flex;
   flex-wrap: wrap;
+  background: white;
+  padding: 15px;
+  border: 2px dotted grey;
+  box-sizing: border-box;
   justify-content: center;
   gap: 10px;
-  width: 100vw;
-  margin: 20px 0px;
+  margin: 0px auto;
+  width: 96vw;
 }
 
 textarea {
   margin: 20px;
+  width: 50%;
 }
 
 .input-section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.year-select {
+  font-size: large;
+  width: 10rem;
 }

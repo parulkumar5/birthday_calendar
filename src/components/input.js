@@ -14,6 +14,7 @@ function input(props) {
         onChange={(elem) => {
           props.onYearChange(elem);
         }}
+        className="year-select"
       >
         <option value="2010">2010</option>
         <option value="2011">2011</option>
