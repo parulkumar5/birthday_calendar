@@ -1,7 +1,7 @@
 import Input from "./components/input";
 import Day from "./components/day";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 // This is how data will be stored 0=sunday 6=saturday
 
@@ -59,12 +59,15 @@ function App() {
 
   return (
     <>
-      <Input handleInput={handleInput} onYearChange={onYearChange} />
+      <header className="header">
+        <span>Birthday Calendar</span>
+      </header>
       <div className="calendar-container">
         {birthdayData.map((elem, index) => {
           return <Day people={elem} day={dayNames[index]} key={index} />;
         })}
       </div>
+      <Input handleInput={handleInput} onYearChange={onYearChange} />
     </>
   );
 }
