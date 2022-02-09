@@ -48,7 +48,7 @@ function App() {
       // creating object and adding it
       tempBirthdayData[dateObject.getDay()].push({
         name: enteredDataArray[i].name,
-        birthday: dateObject,
+        birthday: tempDateObject,
       });
     }
 
