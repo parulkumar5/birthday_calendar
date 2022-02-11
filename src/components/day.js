@@ -3,7 +3,7 @@ import NameInitials from "./nameInitials";
 import { FaFrownOpen } from 'react-icons/fa';
 import "./day.css";
 
-export default function day({ people, day }) {
+export default function Day({ people, day }) {
   let sideOfSquare = 1;
   if (people.length === 0) {
     return (
@@ -20,7 +20,8 @@ export default function day({ people, day }) {
 
   sideOfSquare = Math.ceil(Math.sqrt(people.length));
   let cellLength = 300 / sideOfSquare;
-  people.sort((a, b) => a.birthday - b.birthday);
+  people.sort((a, b) => b.birthday - a.birthday);
+  console.log("After sorted (reverse)", people);
   return (
     <div className="day-container">
       <div className="day-header">
@@ -39,4 +40,8 @@ export default function day({ people, day }) {
       </div>
     </div>
   );
+}
+
+Day.defaultProps = {
+  people: []
 }
