@@ -1,7 +1,6 @@
 {
   "homepage": "https://parulkumar5.github.io/birthday_calendar",
   "name": "birthday_calendar",
-  "homepage": "https://parul5.github.io/calendar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
