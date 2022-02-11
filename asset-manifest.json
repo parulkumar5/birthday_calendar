@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/calendar/static/css/main.dfac45e2.css",
-    "main.js": "/calendar/static/js/main.a4b7fc34.js",
-    "static/js/787.0aac403c.chunk.js": "/calendar/static/js/787.0aac403c.chunk.js",
-    "index.html": "/calendar/index.html",
-    "main.dfac45e2.css.map": "/calendar/static/css/main.dfac45e2.css.map",
-    "main.a4b7fc34.js.map": "/calendar/static/js/main.a4b7fc34.js.map",
-    "787.0aac403c.chunk.js.map": "/calendar/static/js/787.0aac403c.chunk.js.map"
+    "main.css": "/birthday_calendar/static/css/main.dfac45e2.css",
+    "main.js": "/birthday_calendar/static/js/main.6e82fd44.js",
+    "static/js/787.0aac403c.chunk.js": "/birthday_calendar/static/js/787.0aac403c.chunk.js",
+    "index.html": "/birthday_calendar/index.html",
+    "main.dfac45e2.css.map": "/birthday_calendar/static/css/main.dfac45e2.css.map",
+    "main.6e82fd44.js.map": "/birthday_calendar/static/js/main.6e82fd44.js.map",
+    "787.0aac403c.chunk.js.map": "/birthday_calendar/static/js/787.0aac403c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfac45e2.css",
-    "static/js/main.a4b7fc34.js"
+    "static/js/main.6e82fd44.js"
   ]
 }
