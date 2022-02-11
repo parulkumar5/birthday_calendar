@@ -109,21 +109,24 @@ const demoText = `[
 function App() {
   const [birthdayData, setBirthdayData] = useState([]); // 2d Array
   const [enteredString, setEnteredString] = useState(demoText);
-  const [year, setYear] = useState(2010)
+  const [year, setYear] = useState(2010);
   function handleInput(elem) {
     setEnteredString(elem.target.value);
   }
 
   useEffect(() => {
+    if (enteredString === "") {
+      setBirthdayData([[], [], [], [], [], [], []]);
+      return;
+    }
     try {
       JSON.parse(enteredString);
     } catch (e) {
-      console.log('Invalid input');
+      console.log("Invalid input");
       return;
     }
     changeBirthdayData();
-  }, [enteredString, year])
-
+  }, [enteredString, year]);
 
   function changeBirthdayData() {
     // Convert entered data to Array
@@ -134,7 +137,11 @@ function App() {
 
     // traverse array => create corresponding object for the person and add it to right day
     for (let i = 0; i < enteredDataArray.length; i++) {
-      if (!enteredDataArray[i].birthday || !enteredDataArray[i].name || enteredDataArray[i].birthday.length != 10)
+      if (
+        !enteredDataArray[i].birthday ||
+        !enteredDataArray[i].name ||
+        enteredDataArray[i].birthday.length !== 10
+      )
         continue;
       let tempDateObject = new Date(enteredDataArray[i].birthday);
 
@@ -156,7 +163,6 @@ function App() {
     console.log("birthday Data", birthdayData);
   }
 
-
   function onYearChange(elem) {
     setYear(elem.target.value);
     changeBirthdayData();
@@ -172,7 +178,11 @@ function App() {
           return <Day people={elem} day={dayNames[index]} key={index} />;
         })}
       </div>
-      <Input handleInput={handleInput} onYearChange={onYearChange} text={enteredString} />
+      <Input
+        handleInput={handleInput}
+        onYearChange={onYearChange}
+        text={enteredString}
+      />
     </>
   );
 }
