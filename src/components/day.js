@@ -3,7 +3,7 @@ import NameInitials from "./nameInitials";
 import { FaFrownOpen } from 'react-icons/fa';
 import "./day.css";
 
-export default function day({ people, day }) {
+export default function Day({ people, day }) {
   let sideOfSquare = 1;
   if (people.length === 0) {
     return (
@@ -40,4 +40,8 @@ export default function day({ people, day }) {
       </div>
     </div>
   );
+}
+
+Day.defaultProps = {
+  people: []
 }
